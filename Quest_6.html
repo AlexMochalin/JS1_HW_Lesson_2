@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title>Вопрос №6</title>
+		<script>
+			var x = +prompt('Введите первое число:');
+			var y = +prompt('Введите второе число:');
+			var operation = prompt('Введите одну из следующих арифметическую операций:'+'\n sum (сложение)'+'\n sub (вычитание)'+'\n mult (умножение)'+'\n div (деление)', 'sum, sub, mult или div');
+			function sum(x,y) {
+				return x+y;
+			}
+			function sub(x,y) {
+				return x-y;
+			}
+			function mult(x,y) {
+				return x*y;
+			}
+			function div(x,y) {
+				return x/y;
+			}
+			function mathOperation(x,y,operation) {
+				switch(operation) {
+					case 'sum':
+						return sum(x,y);
+					case 'sub':
+						return sub(x,y);
+					case 'mult':
+						return mult(x,y);
+					case 'div':
+						return div(x,y);
+				}
+			}
+			alert('Полученное значение равно: '+mathOperation(x,y,operation));
+		</script>
+	</head>
+	<body></body>
+</html>
